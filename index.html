@@ -4,114 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الخدمات الطلابية المتكاملة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- شعار الموقع -->
-    <header class="header">
-        <div class="logo-container">
-            <div class="logo">✨</div>
-            <h1 class="logo-text">الخدمات الطلابية</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>الخدمات الطلابية</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#why-us">لماذا نحن</a></li>
+                <li><a href="#contact">التواصل</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <!-- قسم المقدمة (Hero Section) -->
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <div class="hero-content">
-            <h1 class="greeting">السلام عليكم ورحمة الله وبركاته 👋</h1>
-            <h2 class="main-title">يسرنا أن نقدم لكم خدمات طلابية متكاملة</h2>
-            <p class="subtitle">أسعار مناسبة لجميع الطلاب 🎓</p>
+            <h1>الخدمات الطلابية المتكاملة</h1>
+            <p>الجودة والاحترافية لنجاحك الأكاديمي</p>
+            <a href="https://t.me/AliAsimy" class="cta-btn" target="_blank">
+                <i class="fab fa-telegram"></i>
+                تواصل عبر تليجرام
+            </a>
         </div>
-    </section>
-
-    <!-- قسم الخدمات (Services Section) -->
-    <section class="services">
-        <h2 class="section-title">نقدم لكم الخدمات التالية:</h2>
-        <div class="services-grid">
-            <!-- خدمة 1 -->
-            <div class="service-card">
-                <div class="service-icon">📕</div>
-                <h3 class="service-name">أبحاث جامعية</h3>
-                <p class="service-desc">لجميع المواد والتخصصات الجامعية 🌟🌟</p>
-            </div>
-
-            <!-- خدمة 2 -->
-            <div class="service-card">
-                <div class="service-icon">📗</div>
-                <h3 class="service-name">حل واجبات وأنشطة</h3>
-                <p class="service-desc">مع شرح للمواد وعمل جميع التصاميم ✍️🎨</p>
-            </div>
-
-            <!-- خدمة 3 -->
-            <div class="service-card">
-                <div class="service-icon">📘</div>
-                <h3 class="service-name">عروض بوربوينت احترافية</h3>
-                <p class="service-desc">لجميع المواد والتخصصات الجامعية 💻📊</p>
-            </div>
-
-            <!-- خدمة 4 -->
-            <div class="service-card">
-                <div class="service-icon">📜</div>
-                <h3 class="service-name">رسائل الماجستير</h3>
-                <p class="service-desc">مساعدة في الإعداد والتنسيق 🧑‍🏫</p>
-            </div>
-
-            <!-- خدمة 5 -->
-            <div class="service-card">
-                <div class="service-icon">📝</div>
-                <h3 class="service-name">حل التكاليف والواجبات</h3>
-                <p class="service-desc">Assignments لجميع المواد والتخصصات 🌟🌟</p>
-            </div>
-
-            <!-- خدمة 6 -->
-            <div class="service-card">
-                <div class="service-icon">📔</div>
-                <h3 class="service-name">تلخيص الكتب</h3>
-                <p class="service-desc">باللغتين العربية والإنجليزية 📖✍️</p>
-            </div>
-
-            <!-- خدمة 7 -->
-            <div class="service-card">
-                <div class="service-icon">📄</div>
-                <h3 class="service-name">إصدار أعذار طبية</h3>
-                <p class="service-desc">خدمة سريعة وموثوقة 🏥</p>
-            </div>
-
-            <!-- خدمة 8 -->
-            <div class="service-card">
-                <div class="service-icon">🌐</div>
-                <h3 class="service-name">ترجمة الكتب والمحاضرات</h3>
-                <p class="service-desc">من العربية إلى الإنجليزية والعكس 🔄</p>
-            </div>
-
-            <!-- خدمة 9 -->
-            <div class="service-card">
-                <div class="service-icon">📙</div>
-                <h3 class="service-name">إعداد التقارير والمشاريع</h3>
-                <p class="service-desc">Projects & Presentations لجميع التخصصات 🌟🌟</p>
+        <div class="hero-image">
+            <div class="book-icon">
+                <i class="fas fa-book"></i>
+                <i class="fas fa-graduation-cap"></i>
             </div>
         </div>
     </section>
 
-    <!-- قسم الفخر (Pride Section) -->
-    <section class="pride">
-        <h2 class="pride-text">نفتخر بمساعدة طلاب المملكة العربية السعودية 🇸🇦</h2>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>أبحاث جامعية</h3>
+                    <p>أبحاث احترافية لجميع المواد والتخصصات الجامعية</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>حل الواجبات</h3>
+                    <p>حل واجبات وأنشطة مع شرح مفصل للمواد</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-presentation"></i>
+                    </div>
+                    <h3>عروض بوربوينت</h3>
+                    <p>عروض احترافية وجذابة لجميع التخصصات</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h3>رسائل الماجستير</h3>
+                    <p>مساعدة في الإعداد والتنسيق الاحترافي</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>التكاليف والمشاريع</h3>
+                    <p>حل تكاليف ومشاريع لجميع المواد</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>تلخيص الكتب</h3>
+                    <p>تلخيصات شاملة باللغتين العربية والإنجليزية</p>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h3>أعذار طبية</h3>
+                    <p>خدمة سريعة وموثوقة للأعذار الطبية</p>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>الترجمة</h3>
+                    <p>ترجمة احترافية من العربية للإنجليزية والعكس</p>
+                </div>
+
+                <!-- Service 9 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>التقارير والمشاريع</h3>
+                    <p>إعداد تقارير ومشاريع احترافية</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- قسم التواصل (Contact Section) -->
-    <section class="contact">
-        <h2 class="section-title">للتواصل معنا:</h2>
-        <div class="contact-buttons">
-            <a href="https://t.me/AliAsimy" class="contact-icon-btn telegram-icon-btn" target="_blank" title="تواصل معنا عبر تليجرام">
-                <span class="telegram-icon">✈️</span>
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <h2 class="section-title">لماذا تختار خدماتنا؟</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-tag"></i>
+                    <h3>أسعار مناسبة</h3>
+                    <p>أسعار تنافسية تناسب جميع الطلاب</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>جودة مضمونة</h3>
+                    <p>خدمات عالية الجودة مع ضمان الرضا</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <h3>سرعة التنفيذ</h3>
+                    <p>تسليم سريع وفي الوقت المحدد</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>السرية والأمان</h3>
+                    <p>حماية كاملة لخصوصية بيانات العملاء</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <p class="contact-subtitle">اطلب خدمتك الآن عبر تليجرام</p>
+            <a href="https://t.me/AliAsimy" class="cta-btn large" target="_blank">
+                <i class="fab fa-telegram"></i>
+                تواصل عبر تليجرام
             </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 الخدمات الطلابية المتكاملة. جميع الحقوق محفوظة.</p>
+        <div class="container">
+            <p>&copy; 2025 الخدمات الطلابية المتكاملة. جميع الحقوق محفوظة.</p>
+            <div class="social-links">
+                <a href="https://t.me/AliAsimy" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
-
